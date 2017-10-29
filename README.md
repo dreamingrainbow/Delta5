@@ -1,29 +1,11 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+This is a simple cypher program, based off the famous Caesar cipher. To make it a little more secure I adding a 5 step incremented hash using the passphrase.
 
-### What is this repository for? ###
+### Usage ###
+let passPhrase = 'banana';
+let message = 'A cup of tea for you sir?';
+r = delta5(passPhrase, message );
+r = delta5(passPhrase, r, 'd');
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+### Requires a min of 6 Character Passphrase ###
