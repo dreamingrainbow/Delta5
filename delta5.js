@@ -1,4 +1,4 @@
-function delta5( passPhraseDirty, message, mode='encrypt',level=5)
+let delta5=function( passPhraseDirty, message, mode='encrypt',level=5)
 {
     let passPhraseSplit = [];
     let messageEn = [];
