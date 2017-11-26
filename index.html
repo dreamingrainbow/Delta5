@@ -11,7 +11,7 @@
     let myDelta5;
     let phrase;
     let message;
-    document.getElementById('phrase').addListener('change', event => {
+    document.getElementById('phrase').addEventListener('change', event => {
       let passPhrase = document.getElementById('phrase').val();
       let message = document.getElementById('message').val();
       let r = delta5(passPhrase, message );
