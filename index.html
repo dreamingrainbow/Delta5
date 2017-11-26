@@ -8,12 +8,9 @@
     <textarea id="message" ></textarea>
     <input id="phrase"/>
     <script>
-    let myDelta5;
-    let phrase;
-    let message;
     document.getElementById('phrase').addEventListener('change', event => {
-      let passPhrase = document.getElementById('phrase').val();
-      let message = document.getElementById('message').val();
+      let passPhrase = document.getElementById('phrase').value;
+      let message = document.getElementById('message').value;
       let r = delta5(passPhrase, message );
       let ur = delta5(passPhrase, r, 'd');
       console.log(r);
