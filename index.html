@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+  <title>Delta 5</title>
+    <script src="delta5.js"></script>
+  </head>
+  <body>
+    <script>
+    let myDelta5;
+    let phrase;
+    let message;
+    document.getElementById('phrase').addListener('change', event => {
+      let passPhrase = document.getElementById('phrase').val();
+      let message = document.getElementById('message').val();
+      let r = delta5(passPhrase, message );
+      let ur = delta5(passPhrase, r, 'd');
+      console.log(r);
+      console.log(ur);
+    });
+    </script>
+    <textarea id="message" ></textarea>
+    <input id="phrase"/>
+  </body>
+</html>
